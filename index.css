@@ -67,13 +67,15 @@ body {
 }
 
 .backgroundVideo {
-    width: 120vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 0;
-    left: -10vw;
+    left: 0;
     top: 0;
+    object-fit: cover;
 }
+
 
 .email {
     color: #ffffff6e;
