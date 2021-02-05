@@ -1,6 +1,8 @@
 body {    
     margin: 0 !important;
     padding: 0 !important;
+    background-color: #000;
+    font-family: 'Muli', sans-serif;
 }
 
 .center {
@@ -9,10 +11,12 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #000;
     flex-direction: column;
     padding: 0em 2em;
     box-sizing: border-box;
+    z-index: 2;
+    position: fixed;
+    background: #000000c5;
 }
 
 .logo {
@@ -37,22 +41,44 @@ body {
 .infoBox {
     margin-top: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
-.instagramLink {
+.socialLink {
     transition: 0.08s;
+    margin: 0em 0.75em;
 }
 
-.instagramLink:hover {
+.socialLink:hover {
     opacity: 0.6;
 }
 
-.instagramLink:active {
+.socialLink:active {
     opacity: 0.5;
 }
 
 .instagramIcon {
     width: 2.2rem;
+}
+
+.facebookIcon {
+    width: 2.2rem;
+}
+
+.backgroundVideo {
+    width: 120vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    left: -10vw;
+    top: 0;
+}
+
+.email {
+    color: #ffffff6e;
+    letter-spacing: 0.014em;
+    font-weight: 500;
+    position: absolute;
+    bottom: 2em;
 }
